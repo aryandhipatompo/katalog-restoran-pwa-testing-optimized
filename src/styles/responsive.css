@@ -1,0 +1,84 @@
+@media screen and (min-width: 660px) {
+  .content .content-heading h2 {
+    font-size: smaller;
+  }
+}
+
+@media screen and (min-width: 660px) {
+  .app-bar {
+    grid-template-columns: 1fr auto;
+    padding: 8px 32px;
+    background-color: #176B87;
+    backdrop-filter: blur(10px);
+  }
+
+  .app-bar .app-bar-brand h1 {
+    font-size: 1.5em;
+  }
+
+  .app-bar .app-bar-menu {
+    display: none;
+  }
+
+  .app-bar .app-bar-navigation {
+    position: static;
+    width: 100%;
+  }
+
+  .app-bar .app-bar-navigation ul li {
+    display: inline-block;
+  }
+
+  .app-bar .app-bar-navigation ul li a {
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    margin: 0;
+  }
+
+  .restaurants {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 30px;
+  }
+
+  .restaurant-info {
+    display: flex;
+    gap: 20px;
+  }
+
+  .restaurant-meal {
+    display: flex;
+    gap: 30px;
+  }
+
+  .restaurant-info .information {
+    margin-top: 0;
+  }
+
+  .restaurant-meal .restaurant-drink {
+    margin-top: 0;
+  }
+
+  .restaurant .restaurant-title {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .restaurant .restaurant-overview {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .app-bar .app-bar-brand h1 {
+    font-size: 2em;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .restaurants {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
